@@ -5,9 +5,60 @@
 		content="text/html; charset=iso-8859-1">
 	</head>
 	<style type="text/css">
-		p {font-family: Arial; background-color:rgb(204, 204, 255)} 
-		td.bg { font-family: Arial; background-color: rgb(204, 204, 255)}
-		LI{padding-top:5px}
+		header {
+			font-size: 25px;
+		}
+		h3 {
+			/*background-color:rgb(204, 204, 255)*/
+		}
+		p {
+			font-family: Arial; 
+			/*background-color:rgb(204, 204, 255)*/
+		} 
+		td.bg { 
+			font-family: Arial; 
+			background-color: rgb(204, 204, 255)
+		}
+		LI {
+			padding-top:5px
+		}
+		
+		/* Style the tab */
+		.tab {
+		  overflow: hidden;
+		  border: none; /*1px solid #ccc;*/
+		  /*background-color: #f1f1f1;*/
+		}
+		
+		/* Style the buttons inside the tab */
+		.tab button {
+		  background-color: inherit;
+		  float: left;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+		  padding: 14px 16px;
+		  transition: 0.3s;
+		  font-size: 17px;
+		}
+		
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		  background-color: rgb(204, 204, 255); /*#ddd;*/
+		}
+		
+		/* Create an active/current tablink class */
+		.tab button.active {
+		  background-color: rgb(204, 204, 255); /*#ccc;*/
+		}
+		
+		/* Style the tab content */
+		.tabcontent {
+		  display: none;
+		  padding: 6px 12px;
+		  border: none; /*1px solid #ccc;*/
+		  border-top: none;
+		}
 	</style>
 	<body alink="#fe0000" bgcolor="#ffffff" link="#0000fe" text="#000000"
 		vlink="#980066">
@@ -17,8 +68,8 @@
 				<tbody>
 					<tr>
 						<td><img alt="konsens" src="konsens/logo_konsens.pdf" nosave="" border="0" hspace="50" width="250"></td>
-						<td> <a name="start"><h2 align="center">KONSENS: Konsistente Optimierung und Stabilisierung <br> 
-							elektrischer Netzwerksysteme</h2></a> 
+						<td> <header name="start" align="center"><h2>KONSENS: Konsistente Optimierung und Stabilisierung <br> 
+							elektrischer Netzwerksysteme</h2></header> 
 						</td>
 					</tr>
 				</tbody>
@@ -249,6 +300,7 @@
 				<tr> <td class="bg">  <b>Description:</b>  </td> </tr>
 				<tr>
 					<td> <img src="konsens/konsens-scheme.png" width=300 align="right"> 
+						<p>
 						The energy transition comes along with more and more 
 						volatile generators (renewable energy sources), flexible consumers (e-mobility) as well as novel energy storages 
 						(batteries, heat accumulators). Thus, new challenges have to be faced on the one hand, but also new opportunities 
@@ -259,13 +311,14 @@
 						The goal of this project is to develop mathematical optimization methods to exploit flexibilities on all levels 
 						of the electricity grid within the power flow optimization while ensuring security and stability. To this end, 
 						it is essential to focus on the core elements to generate mathematically manageable models. 
-						<br>
-						<br>
+						</p>
+						<p>
 						The year 2020 is coined by the coronavirus disease 2019 (COVID-19) pandemic caused by the severe acute respiratory
 						syndrome coronavirus 2 (SARS-CoV-2). Starting in May 2020 the KONSENS consortium also aims to contribute to provide
 						information on the spread of the disease and evaluate countermeasures. Here, the key is the versatile nature of
 						the mathematical methods. 
 						For this second branch of the project the team is supported by Prof. Dr. Thomas Hotz and Stefan Heyder from the <a href="https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-mathematik/profil/fachgebiet-wahrscheinlichkeitsrechnung-und-mathematische-statistik">Group for Probability Theory and Mathematical Statistics</a> of the department for mathematics at Technische Universit&auml;t Ilmenau. 
+						</p>
 					</td>
 				</tr>
 				<tr><td align="right"><a href="#start">top</a></td></tr>
@@ -273,10 +326,21 @@
 				<!-- Publications -->
 				<tr> <td class="bg"> <a name="pubs"><b>Publications:</b></a></td> </tr>
 				<tr>
-					<td>The first goal of this project is to develop mathematical methods and algorithms for the optimization and stabilization of the electrical power grid with emphasis on new technological developments such as the rise of renewables, E-mobility, and others. Furthermore, in the course of the extension of the project towards epidemic research, models to predict the evolution of the COVID-19 pandemic and to study the impact of countermeasures are developed. All results are reported in scientific publications:
-						<ul>
-							<li> <p> Journal publications</p> </li>
-							<ul>
+					<td><p>The first goal of this project is to develop mathematical methods and algorithms for the optimization and stabilization of the electrical power grid 
+						with emphasis on new technological developments such as the rise of renewables, E-mobility, and others. Furthermore, in the course of the 
+						extension of the project towards epidemic research, models to predict the evolution of the COVID-19 pandemic and to study the impact of 
+						countermeasures are developed. All results are reported in scientific publications:
+						</p>
+<div class="tab">
+  <button class="tablinks" onclick="openPub(event, 'journals')" id="defaultOpen">Journal Publications</button>
+  <button class="tablinks" onclick="openPub(event, 'conferences')">Conference Proceedings & Book Chapters</button>
+  <button class="tablinks" onclick="openPub(event, 'posters')">Scientific Posters</button>
+  <button class="tablinks" onclick="openPub(event, 'presentations')">Presentations</button>
+  <button class="tablinks" onclick="openPub(event, 'theses')">Student Theses</button>
+</div>
+
+<div id="journals" class="tabcontent">
+<ul>
 								<li> S. Grundel, S. Heyder, T. Hotz, T.K.S. Ritschel, P. Sauerteig, K. Worthmann<br> 
 									<strong>How to Coordinate Vaccination and Social Distancing to Mitigate SARS-CoV-2 Outbreaks</strong> <br>
 									Accepted for publication in <i>SIAM Journal on Applied Dynamical Systems</i>, preprint available at medRxiv, DOI: <a href="https://www.medrxiv.org/content/10.1101/2020.12.22.20248707v1">10.1101/2020.12.22.20248707</a> 
@@ -310,8 +374,9 @@
 									<i>Automatica</i> 119, 109044 (2020)  
 								</li>
 							</ul>
-							
-							<li> <p> Conference papers and book chapters </p> </li>
+</div>
+
+<div id="conferences" class="tabcontent">
 							<ul>
 								<li> T. Aschenbruck, M. Baumann, W. Esterhuizen, B. Filipecki, S. Grundel, C. Helmberg, P. Sauerteig, S. Streif, T.K.S. Ritschel, K. Worthmann<br>  
 									<strong>Optimization and Stabilization of Hierarchical Electrical Networks</strong> <br>
@@ -330,8 +395,9 @@
 									In <i>I. Farag&oacute;, F. Izs&aacute;k, P.L. Simon, editors, Progress in Industrial Mathematics at ECMI 2018, volume 30 of Mathematics in Industry</i>, Springer, 477-483, 2019.
 								</li>
 							</ul>
-							
-							<li> <p> Scientific posters </p> </li>
+</div>
+
+<div id="posters" class="tabcontent">
 							<ul>
 							        <li> M. Baumann, S. Grundel, P. Sauerteig, and K. Worthmann. <a href="data/group19.pdf">Surrogate Models for Coupled Microgrids</a><br>
 							        		Presented at <i>CSC Workshop on Identification, simulation and control of complex dynamical systems from Data</i>, May 08-11, 2019
@@ -342,46 +408,65 @@
 								<li> P. Sauerteig and K. Worthmann. <a href="data/poster_ODS_2018.pdf">Control of Residential Energy Systems using Energy Storages & Controllable Loads</a><br>
 									Presented at <i>Summer School on Optimization of Dynamical Systems</i>, Bremen, September 3, 2018
 								</li>
-								
 							</ul>
-							
-							<li> <p> Presentations </p> </li>
+</div>
+
+<div id="presentations" class="tabcontent">
 							<ul>
-							<li> P. Sauerteig: <a href="data/ecmi2021_sauerteig.pdf">How to Coordinate Countermeasures against COVID-19</a><br> 
-								Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 14th April 2021 
-							</li>
-							<li> B. Filipecki: Semidefinite Programming Approach to Optimal Power Flow with FACTS Devices<br> 
-								Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 13th April 2021 
-							</li>
-							<li> P. Sauerteig: <a href="data/IFAC2020_sauerteig.pdf">Distributed Control Enforcing Group Sparsity in Smart Grids</a><br>
-								Presented at <i>21st IFAC World Congress Berlin (virtual)</i>, 12-17 July 2020
-							</li>
-                                                        	<li> P. Sauerteig: <a href="data/Sauerteig_at_ShanghaiTechJune19.pdf">Current Research Topics in Distributed Optimization of Smart Grids</a><br>
-                                                        		Presented at <i>ShanghaiTech SIST Seminar</i>, 10th June 2019
-							</li>
-							<li> W. Esterhuizen: <a href="data/willem_mpi.pdf">Transient Stability Analysis of Power Grids with Admissible and Maximal Robust Positively Invariant Sets</a><br>
-								Presented at <i>MPI Magdeburg</i>, 12th February 2019
-							</li>
-							<li> M. Baumann: <a href="data/siamcse19.pdf">Model-order Reduction for Dynamic Power Flow Simulations</a><br>
-								Presented at <i>SIAM CSE 2019</i>, Spokane, WA, USA, 27th February 2019
-							</li>
-							<li> M. Baumann: <a href="data/fraunhofer-02-07-18.pdf">Model-Order Reduction for Power Grid Simulations with Renewables and Batteries</a><br>
-								Presented at <i>Fraunhofer IEE</i>, Kassel, Germany, 2nd July 2018
-							</li>
-							<li> P. Sauerteig: <a href="data/ECMI2018.pdf">Control of Residential Energy Systems using Energy Storages and Controllable Loads</a><br>
-								Presented at <i>20th European Conference on Mathematics for Industry Budapest</i>, 22nd June 2018
-							</li>
-<!-- 								<li>  </li> -->
+								<li> P. Sauerteig: <a href="data/ecmi2021_sauerteig.pdf">How to Coordinate Countermeasures against COVID-19</a><br> 
+									Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 14th April 2021 
+								</li>
+								<li> B. Filipecki: Semidefinite Programming Approach to Optimal Power Flow with FACTS Devices<br> 
+									Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 13th April 2021 
+								</li>
+								<li> P. Sauerteig: <a href="data/IFAC2020_sauerteig.pdf">Distributed Control Enforcing Group Sparsity in Smart Grids</a><br>
+									Presented at <i>21st IFAC World Congress Berlin (virtual)</i>, 12-17 July 2020
+								</li>
+                                                        		<li> P. Sauerteig: <a href="data/Sauerteig_at_ShanghaiTechJune19.pdf">Current Research Topics in Distributed Optimization of Smart Grids</a><br>
+                                                        			Presented at <i>ShanghaiTech SIST Seminar</i>, 10th June 2019
+								</li>
+								<li> W. Esterhuizen: <a href="data/willem_mpi.pdf">Transient Stability Analysis of Power Grids with Admissible and Maximal Robust Positively Invariant Sets</a><br>
+									Presented at <i>MPI Magdeburg</i>, 12th February 2019
+								</li>
+								<li> M. Baumann: <a href="data/siamcse19.pdf">Model-order Reduction for Dynamic Power Flow Simulations</a><br>
+									Presented at <i>SIAM CSE 2019</i>, Spokane, WA, USA, 27th February 2019
+								</li>
+								<li> M. Baumann: <a href="data/fraunhofer-02-07-18.pdf">Model-Order Reduction for Power Grid Simulations with Renewables and Batteries</a><br>
+									Presented at <i>Fraunhofer IEE</i>, Kassel, Germany, 2nd July 2018
+								</li>
+								<li> P. Sauerteig: <a href="data/ECMI2018.pdf">Control of Residential Energy Systems using Energy Storages and Controllable Loads</a><br>
+									Presented at <i>20th European Conference on Mathematics for Industry Budapest</i>, 22nd June 2018
+								</li>
 							</ul>
-							</li>
-							<li> <p> Student theses </p> </li>
+</div>
+
+<div id="theses" class="tabcontent">
 							<ul>
 								<li>Frances Weiss: <a href="data/masterthesis_fw_20190830.pdf">Simulation, Analysis, and Model-Order Reduction for Dynamic Power Network Models</a> (master thesis, 2019) <br>
 									Supervision: Sara Grundel and Manuel Baumann at MPI Magdeburg
 								</li>
 							</ul>
-							</li>
-						</ul>
+</div>
+
+<script>
+function openPub(evt, pubName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(pubName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
 					</td>
 				</tr>
 				<tr><td align="right"><a href="#start">top</a></td></tr>
@@ -397,10 +482,9 @@
 					
 					<!-- Meetings -->
 					<tr><td class="bg"><a name="meetup"><b>Project meetings</b></a></td> </tr>
-					<tr><td>The industrial and academic partners (used to) have regular project meetings with alternating hosts. In the course of the pandemic the in-person meetings have been replaced by more frequent virtual meetings. In particular, the academic researchers meet on a weekly basis.
+					<tr><td><p>The industrial and academic partners (used to) have regular project meetings with alternating hosts. In the course of the pandemic the in-person meetings have been replaced by more frequent virtual meetings. In particular, the academic researchers meet on a weekly basis.</p>
 					
-                           			<ul>
-							<li> <p> In-person meetings</p>
+							<h3> In-person meetings</h3>
 								<ul>
 									<li> 10.03.2020 - Lunch-to-lunch meeting at TU Chemnitz [all partners]</li>
                                 						<li> 01.10.2019 - Progress meeting at TU Ilmenau [all partners]</li>
@@ -413,10 +497,7 @@
 									<li> 07.05.2018 - Modelling workshop at ENSO NETZ GmbH in Dresden [MPI, TUIl, ENSO]</li>
 									<li> 02.05.2018 - Modelling workshop at Venios GmbH in Frankfurt am Main [MPI, TUIl, Venios] </li>
 									<li> 09.04.2018 - Kick-off meeting of all project partners involved at TU Chemnitz [all partners]</li>
-								</ul>
-							</li>
-						</ul>
-						
+								</ul>						
 					</td> </tr>
 					<tr>
 						<td>
