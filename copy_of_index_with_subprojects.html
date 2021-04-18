@@ -111,7 +111,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Algorithmic and Discrete Mathematics, Technische Universit&auml;t Chemnitz, Stra&szlig;e der Nationen 62, 09107 Chemnitz</td>
+					<td>Algorithmic and Discrete Mathematics, Technical University of Chemnitz, Stra&szlig;e der Nationen 62, 09107 Chemnitz</td>
 				</tr>
 				<tr>
 					<td><br></td>
@@ -142,7 +142,7 @@
 				<tr>
 					<td><br>
 					</td>
-					<td>Automatic Control and System Dynamics Laboratory, Technische Universit&auml;t Chemnitz, Stra&szlig;e der Nationen 62, 09107 Chemnitz</td>
+					<td>Automatic Control and System Dynamics Laboratory, Technical University of Chemnitz, Stra&szlig;e der Nationen 62, 09107 Chemnitz</td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -155,7 +155,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Optimization Based Control, Technische Universit&auml;t Ilmenau, Weimarer Str. 25, 98693 Ilmenau</td>
+					<td>Optimization Based Control, Technical University of Ilmenau, Weimarer Str. 25, 98693 Ilmenau</td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -170,7 +170,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Technische Universit&auml;t Chemnitz, <tt>tim.aschenbruckATetit.tu-chemnitz.de</tt> </td>
+					<td>Technical University of Chemnitz, <tt>tim.aschenbruckATetit.tu-chemnitz.de</tt> </td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -200,7 +200,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Technische Universit&auml;t Chemnitz, <tt>willem.esterhuizenATetit.tu-chemnitz.de</tt> </td>
+					<td>Technical University of Chemnitz, <tt>willem.esterhuizenATetit.tu-chemnitz.de</tt> </td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -215,7 +215,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Technische Universit&auml;t Chemnitz, <tt>bartosz.filipeckiATmathematik.tu-chemnitz.de</tt> </td>
+					<td>Technical University of Chemnitz, <tt>bartosz.filipeckiATmathematik.tu-chemnitz.de</tt> </td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -229,7 +229,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Technische Universit&auml;t Chemnitz, <tt>felix.petzkeATetit.tu-chemnitz.de</tt> </td>
+					<td>Technical University of Chemnitz, <tt>felix.petzkeATetit.tu-chemnitz.de</tt> </td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -257,7 +257,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Technische Universit&auml;t Ilmenau, <tt>philipp.sauerteigATtu-ilmenau.de</tt> </td>
+					<td>Technical University of Ilmenau, <tt>philipp.sauerteigATtu-ilmenau.de</tt> </td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -288,18 +288,19 @@
 			</tbody>
 		</table>
 		<br>
-		<hr>
+		<!-- <hr>
 		<center>
 			<a name="projdes"><img src="konsens/wind-turbines.jpg" width="50%"></img></a>
 		</center>
 		<br>
+		-->
 		<table border="0" cellpadding="3" cellspacing="1">
 			<tbody>
 			
-			<!-- Description -->
+				<!-- Description -->
 				<tr> <td class="bg">  <b>Description:</b>  </td> </tr>
 				<tr>
-					<td> <img src="konsens/konsens-scheme.png" width=300 align="right"> 
+					<td> <!-- <img src="konsens/HierarchicalGrid.pdf" width=400 align="right"> -->
 						<p>
 						The energy transition comes along with more and more 
 						volatile generators (renewable energy sources), flexible consumers (e-mobility) as well as novel energy storages 
@@ -321,8 +322,54 @@
 						</p>
 					</td>
 				</tr>
+				<tr>
+					<td>
+					<!-- Subprojects -->
+					<div class="tab">
+  						<button class="tablinks" onclick="openSubproject(event, 'obc')" id="defaultOpen">Distributed Control of Microgrids</button>
+  						<button class="tablinks" onclick="openSubproject(event, 'mpi')">Model Order Reduction</button>
+  						<button class="tablinks" onclick="openSubproject(event, 'acsd')">Robust Model Analysis and Control</button>
+  						<button class="tablinks" onclick="openSubproject(event, 'adm')">Mixed-Integer and Semidefinite Optimal Power Flow</button>
+					</div>
+					
+					<div id="obc" class="tabcontent">
+					<img src="konsens/MG.pdf" width=500 align="right">
+					<p>
+					Es wird eine Methodik zur Optimierung von Lastprofilen in Microgrids erarbeitet. 
+					Dabei sollen verteilte L&ouml;sungsverfahren zum Einsatz kommen. 
+					Dies erm&ouml;glicht es einerseits Anforderungen seitens des Netzbetreibers wie Skalierbarkeit und Plug-and-Play-F&auml;higkeit zu realisieren und andererseits die Privatsph&auml;re der einzelnen Teilsysteme (Prosumer) angemessen ber&uuml;cksichtigen zu k&ouml;nnen. 
+					Begonnen wird mit Modellierungsaspekten und der Problemspezifikation in Kooperation mit TP2, der Venios GmbH und Energy Saxony e.V., so dass die erarbeitete L&ouml;sung sich an den Bed&uuml;rfnissen der Anwendungspartner orientiert und diesen schlussendlich ein Programmpaket zur Verf&uuml;gung steht. 
+					Die Entwicklung und programmiertechnische Umsetzung soll dabei so erfolgen, dass die Schnittstellen zu den weiteren Netzebenen und somit den anderen Teilprojekten und Anwendungspartnern fortw&auml;hrend Beachtung finden.
+					Des Weiteren soll diese Algorithmenklasse so erweitert werden, dass sie robuste und effiziente Ergebnisse trotz vorhandener Unsicherheiten und stochastischer Einfl&uuml;sse gew&auml;hrleistet. 
+					Dabei werden sowohl Ladeentscheidungen als auch Verbrauchsprofile als Entscheidungsvariablen aufgefasst, um Flexibilit&auml;t in den Nebenbedingungen (Toleranzbereiche) und den Zielvorgaben auszunutzen. 
+					Bzgl. dieser Aspekte ergeben sich methodisch enge Verbindungen zu TP3 und TP4.
+					</p>
+					</div>
+					
+<script>
+function openSubproject(evt, projectName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(projectName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+					
+					</td>
+				</tr>
 				<tr><td align="right"><a href="#start">top</a></td></tr>
 				
+			
 				<!-- Publications -->
 				<tr> <td class="bg"> <a name="pubs"><b>Publications:</b></a></td> </tr>
 				<tr>
