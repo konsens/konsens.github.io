@@ -59,6 +59,11 @@
 		  border: none; <!--/*1px solid #ccc;*/-->
 		  border-top: none;
 		}
+		
+		/* Vertical alignment of table elements */
+		td {
+			vertical-align: top;
+		}
 	</style>
 	<body alink="#fe0000" bgcolor="#ffffff" link="#0000fe" text="#000000"
 		vlink="#980066">
@@ -86,7 +91,7 @@
 			</table>
 			<table border="0" cellpadding="3" cellspacing="1">
 				<tbody>
-					<tr><td class="bg"> <a href="#researchers">[Researchers]</a> <a href="#projdes">[Project Description]</a> <a href="#pubs">[Publications]</a> <a href="#press">[Press]</a> <a href="#meetup">[Meetings]</a><br></td></tr>
+					<tr><td class="bg"> <a href="#projdes">[Project Description]</a> <a href="#pubs">[Publications]</a> <a href="#press">[Press]</a> <a href="#meetup">[Meetings]</a><br></td></tr>
 				</tbody>
 			</table>
 		</center>
@@ -104,6 +109,18 @@
 				
 				<td><br> </td>
 				
+				<tr>
+					<td><strong>Support:</strong></td>
+					<td>
+						<a href="https://www.bmbf.de/foerderungen/bekanntmachung-1338.html">Bundesministerium f&uuml;r Bildung und Forschung</a> 
+						- "Mathematik f&uuml;r Innovationen" als Beitrag zur Energiewende
+					</td>
+				</tr>
+				
+				<td><br> </td>
+			</tbody>
+		</table>
+		<!--
 				<tr>
 					<td><a name="researchers"><strong>Project leaders:</strong></a></td>
 					<td><a href="https://www-user.tu-chemnitz.de/~helmberg/">Prof. Dr. Christoph Helmberg</a> (Project Coordinator)
@@ -155,7 +172,7 @@
 				</tr>
 				<tr>
 					<td><br> </td>
-					<td>Optimization Based Control, Technische Universit&auml;t Ilmenau, Weimarer Str. 25, 98693 Ilmenau</td>
+					<td>Optimization-based Control, Technische Universit&auml;t Ilmenau, Weimarer Str. 25, 98693 Ilmenau</td>
 				</tr>
 				<tr>
 					<td><br> </td>
@@ -275,19 +292,11 @@
 					    <a href="http://www.energy-saxony.net/">Energy Saxony e. V.</a>
 					</td>
 				</tr>
-				
-				<td><br> </td>
-				
-				<tr>
-					<td><strong>Support:</strong></td>
-					<td>
-						<a href="https://www.bmbf.de/foerderungen/bekanntmachung-1338.html">Bundesministerium f&uuml;r Bildung und Forschung</a> - "Mathematik f&uuml;r Innovationen" als Beitrag zur Energiewende
-					</td>
-				</tr>
 				<tr><td></td><td align="right"><a href="#start">top</a></td></tr>
 			</tbody>
 		</table>
 		<br>
+		-->
 		<!--
 		<hr>
 		<center>
@@ -298,8 +307,176 @@
 		<table border="0" cellpadding="3" cellspacing="1">
 			<tbody>
 			
+			<!-- Partners -->
+			<tr><td class="bg"> <b>Partners</b> </td> </tr>
+			<tr>
+				<td>
+					<div class="tab">
+  					<button class="tablinks" onclick="openPartner(event, 'TUC')" id="defaultOpen"><b>TU Chemnitz</b></button>
+  					<button class="tablinks" onclick="openPartner(event, 'MPI')"><b>MPI Magdeburg</b></button>
+  					<button class="tablinks" onclick="openPartner(event, 'TUI')"><b>TU Ilmenau</b></button>
+  					<button class="tablinks" onclick="openPartner(event, 'industry')"><b>Industry</b></button>
+					</div>
+					
+					<!-- TU Chemnitz -->
+					<div id="TUC" class="tabcontent">
+						<table border="0" cellspacing="10px" width="100%">
+						<tbody>
+						<tr><td>
+							<ul>
+								<b>Algorithmic and Discrete Mathematics</b><br>
+								<li>	<a href="https://www-user.tu-chemnitz.de/~helmberg/">Prof. Dr. Christoph Helmberg</a> (Project Coordinator)<br>
+									<tt>helmbergATmathematik.tu-chemnitz.de</tt><br>
+									Technische Universit&auml;t Chemnitz<br>
+									Stra&szlig;e der Nationen 62, 09107 Chemnitz
+								</li>
+								<li><a href="https://www-user.tu-chemnitz.de/~fiba/">Dr. Bartosz Filipecki</a><br>
+									<tt>bartosz.filipeckiATmathematik.tu-chemnitz.de</tt>
+							</ul>
+							</td>
+							<td>
+							<ul>
+								<b>Automatic Control and System Dynamics Laboratory</b> <br>
+								<li><a href="https://www.tu-chemnitz.de/etit/control/team/streif/index.php.en">Prof. Dr.-Ing. Stefan Streif</a><br>
+									<tt>stefan.streifATetit.tu-chemnitz.de</tt><br>
+									Technische Universit&auml;t Chemnitz<br> 
+									Stra&szlig;e der Nationen 62, 09107 Chemnitz
+								</li>
+								<li><a href="https://www.tu-chemnitz.de/etit/control/team/index.php.en">Tim Aschenbruck</a><br>
+									<tt>tim.aschenbruckATetit.tu-chemnitz.de></tt>
+								</li>
+								<li><a href="https://www.researchgate.net/profile/Willem_Esterhuizen">Dr. Willem Esterhuizen</a><br>
+									<tt>willem.esterhuizenATetit.tu-chemnitz.de</tt>
+								</li>
+								<li><a href="https://www.tu-chemnitz.de/etit/control/team/index.php.en">Felix Petzke</a><br>
+									<tt>felix.petzkeATetit.tu-chemnitz.de</tt>
+								</li>
+							</ul>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<!-- MPI Magdeburg -->
+					<div id="MPI" class="tabcontent">
+						<table border="0" cellspacing="10px" width="100%">
+						<tbody>
+						<tr><td>
+							<ul>
+								<b>Simulation of Energy Systems</b><br> 
+								<li><a href="https://www.mpi-magdeburg.mpg.de/person/26586/842836">Dr. Sara Grundel</a><br>
+									<tt>grundelATmpi-magdeburg.mpg.de</tt><br>
+									Max Planck Institute for Dynamics of Complex Technical Systems<br>
+									Sandtorstra&szlig;e 1, 39106 Magdeburg
+								</li>
+								<li><a href="http://www.manuelbaumann.de">Dr. Manuel Baumann</a></li>
+								<li><a href="https://www.mpi-magdeburg.mpg.de/person/104089/822672">Dr. Tobias K. S. Ritschel</a><br>
+									<tt>ritschelATmpi-magdeburg.mpg.de</tt> 
+								</li>
+							</ul>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<!-- TU Ilmenau -->
+					<div id="TUI" class="tabcontent">
+						<table border="0" cellspacing="10px" width="100%">
+						<tbody>
+						<tr><td>
+							<ul>
+								<b>Optimization-based Control</b><br>
+								<li><a href="https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-mathematik/profil/fachgebiet-optimization-based-control/team/prof-dr-karl-worthmann">Univ.-Prof. Dr. Karl Worthmann</a><br>
+									<tt>karl.worthmannATtu-ilmenau.de</tt><br>
+									Technische Universit&auml;t Ilmenau<br>
+									Weimarer Stra&szlig;e 25, 98693 Ilmenau
+								</li>
+								<li><a href="https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-mathematik/profil/fachgebiet-optimization-based-control/team/philipp-sauerteig-m-sc">Philipp Sauerteig</a><br>
+									<tt>philipp.sauerteigATtu-ilmenau.de</tt>
+								</li>
+							</ul>
+							</td>
+							<td>
+							<ul>
+								<b>Group for Probability Theory and Mathematical Statistics</b> <br>
+								<li><a href="https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-mathematik/profil/fachgebiet-wahrscheinlichkeitsrechnung-und-mathematische-statistik">Prof. Dr. Thomas Hotz</a><br>
+									<tt>thomas.hotzATtu-ilmenau.de</tt><br>
+									Technische Universit&auml;t Ilmenau<br> 
+									Weimarer Stra&szlig;e 25, 98693 Ilmenau
+								</li>
+								<li><a href="https://www.tu-ilmenau.de/universitaet/fakultaeten/fakultaet-mathematik-und-naturwissenschaften/profil/institute-und-fachgebiete/institut-fuer-mathematik/profil/fachgebiet-wahrscheinlichkeitsrechnung-und-mathematische-statistik">Stefan Heyder</a><br>
+									<tt>stefan.heyderATtu-ilmenau.de></tt>
+								</li>
+							</ul>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					
+					<!-- Industry Partners -->
+					<div id="industry" class="tabcontent">
+						<table border="0" cellspacing="10px" width="100%">
+						<tbody>
+						<tr><td>
+							<ul>
+								<li><a href="http://www.enso-netz.de/ensonetz/home_netz.nsf">ENSO NETZ GmbH</a><br>
+									Dr. J&ouml;rg Dickert<br>
+									<br>
+								</li>
+							</ul>
+							</td>
+							<td>
+							<ul>
+								<li><a href="https://www.tennet.eu/de/#&panel1-1">TenneT TSO GmbH</a><br>
+									Dr. Andreas Wasserrab<br>
+									Dr. Stefan Horn
+									<br>
+								</li>
+							</ul>
+							</td>
+							<td>
+							<ul>
+								<li><a href="https://venios.de/en/">Venios GmbH</a><br>
+									Dr. Christian K&ouml;hler<br>
+									<br>
+								</li>
+							</ul>
+							</td>
+							<td>
+							<ul>
+								<li><a href="http://www.energy-saxony.net/">Energy Saxony e.V.</a><br>
+								</li>
+							</ul>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+
+					<script>
+						function openPartner(evt, partnerName) {
+							var i, tabcontent, tablinks;
+  							tabcontent = document.getElementsByClassName("tabcontent");
+  							for (i = 0; i < tabcontent.length; i++) {
+    								tabcontent[i].style.display = "none";
+  							}
+  							tablinks = document.getElementsByClassName("tablinks");
+  							for (i = 0; i < tablinks.length; i++) {
+    								tablinks[i].className = tablinks[i].className.replace(" active", "");
+  							}
+  							document.getElementById(partnerName).style.display = "block";
+  							evt.currentTarget.className += " active";
+						}
+						
+						// Get the element with id="defaultOpen" and click on it
+						document.getElementById("defaultOpen").click();
+					</script>
+			
 			<!-- Description -->
-				<tr> <td class="bg">  <b>Description:</b>  </td> </tr>
+				<tr> <td class="bg">  <a name="projdes"><b>Description:</b></a>  </td> </tr>
 				<tr>
 					<td> <img src="konsens/konsens-scheme.png" width=300 align="right"> 
 						<p>
@@ -333,144 +510,144 @@
 						extension of the project towards epidemic research, models to predict the evolution of the COVID-19 pandemic and to study the impact of 
 						countermeasures are developed. All results are reported in scientific publications:
 						</p>
-<div class="tab">
-  <button class="tablinks" onclick="openPub(event, 'journals')" id="defaultOpen"><b>Journal Publications</b></button>
-  <button class="tablinks" onclick="openPub(event, 'conferences')"><b>Conference Proceedings & Book Chapters</b></button>
-  <button class="tablinks" onclick="openPub(event, 'posters')"><b>Scientific Posters</b></button>
-  <button class="tablinks" onclick="openPub(event, 'presentations')"><b>Presentations</b></button>
-  <button class="tablinks" onclick="openPub(event, 'theses')"><b>Student Theses</b></button>
-</div>
+					<div class="tab">
+  						<button class="tablinks" onclick="openPub(event, 'journals')" id="defaultOpen"><b>Journal Publications</b></button>
+  						<button class="tablinks" onclick="openPub(event, 'conferences')"><b>Conference Proceedings & Book Chapters</b></button>
+  						<button class="tablinks" onclick="openPub(event, 'posters')"><b>Scientific Posters</b></button>
+  						<button class="tablinks" onclick="openPub(event, 'presentations')"><b>Presentations</b></button>
+  						<button class="tablinks" onclick="openPub(event, 'theses')"><b>Student Theses</b></button>
+					</div>
 
-<div id="journals" class="tabcontent">
-<ul>
-								<li> S. Grundel, S. Heyder, T. Hotz, T.K.S. Ritschel, P. Sauerteig, K. Worthmann<br> 
-									<strong>How to Coordinate Vaccination and Social Distancing to Mitigate SARS-CoV-2 Outbreaks</strong> <br>
-									Accepted for publication in <i>SIAM Journal on Applied Dynamical Systems</i>, preprint available at medRxiv, DOI: <a href="https://www.medrxiv.org/content/10.1101/2020.12.22.20248707v1">10.1101/2020.12.22.20248707</a> 
-								</li>
-								<li> S. Grundel, S. Heyder, T. Hotz, T.K.S. Ritschel, P. Sauerteig, K. Worthmann<br> 
-									<strong>How much testing and social distancing is required to control COVID-19? Some insight based on an age-differentiated compartmental model</strong> <br> 
-									Submitted. Preprint available at <a href="https://arxiv.org/abs/2011.01282">https://arxiv.org/abs/2011.01282</a> 
-								</li>
-								<li> Y. Jiang, P. Sauerteig, B. Houska, K. Worthmann<br>
-									<strong>Distributed Optimization using ALADIN for Model Predictive Control in Smart Grids</strong> <br>
-									<i>IEEE Transactions on Control Systems Technology</i> (early access, 2021) 
-								</li>
-                							<li> T.K.S. Ritschel, F. Weiss, M. Baumann, S. Grundel <br> 
-									<strong>Nonlinear model reduction of dynamical power grid models using quadratization and balanced truncation</strong> <br>
-									<i>at - Automatisierungstechnik</i> <strong>68</strong>(12), 1022-1034 (2020, DOI: <a href="https://doi.org/10.1515/auto-2020-0070">10.1515/auto-2020-0070</a>) 
-								</li>
-								<li> T. Aschenbruck, W. Esterhuizen, S. Streif <br>
-									<strong>Transient stability analysis of power grids with admissible and maximal robust positively invariant sets</strong><br>
-									<i> Automatisierungstechnik</i>  (2020). In Press
-								</li>
-								<li> P. Sauerteig, K. Worthmann<br>
-									<strong>Towards multiobjective optimization and control of smart grids.</strong> <br>
-									<i>Optimal Control, Applications and Methods (OCAM), special issue "MPC for Energy Systems: Economic and Distributed Approaches"</i>, <strong>41</strong>:128-145 (2020) 
-								</li>
-								<li> W. Esterhuizen, T. Aschenbruck, S. Streif<br> 
-									<a href="https://arxiv.org/abs/1904.01985">On Maximal Robust Positively Invariant Sets in Constrained Nonlinear Systems,</a><br> 
-									<i>Automatica</i> 119, 109044 (2020)  
-								</li>
-							        <li> M. Baumann, S. Grundel, P. Sauerteig, K. Worthmann<br>
-							         	<strong>Surrogate models in bidirectional optimization of coupled microgrids.</strong> <br>
-									<i>at-Automatisierungstechnik</i>, <strong>67</strong>(12), 1035-1046 (2019)
-								</li>
-							</ul>
-</div>
+					<div id="journals" class="tabcontent">
+						<ul>
+							<li> S. Grundel, S. Heyder, T. Hotz, T.K.S. Ritschel, P. Sauerteig, K. Worthmann<br> 
+								<strong>How to Coordinate Vaccination and Social Distancing to Mitigate SARS-CoV-2 Outbreaks</strong> <br>
+								Accepted for publication in <i>SIAM Journal on Applied Dynamical Systems</i>, preprint available at medRxiv, DOI: <a href="https://www.medrxiv.org/content/10.1101/2020.12.22.20248707v1">10.1101/2020.12.22.20248707</a> 
+							</li>
+							<li> S. Grundel, S. Heyder, T. Hotz, T.K.S. Ritschel, P. Sauerteig, K. Worthmann<br> 
+								<strong>How much testing and social distancing is required to control COVID-19? Some insight based on an age-differentiated compartmental model</strong> <br> 
+								Submitted. Preprint available at <a href="https://arxiv.org/abs/2011.01282">https://arxiv.org/abs/2011.01282</a> 
+							</li>
+							<li> Y. Jiang, P. Sauerteig, B. Houska, K. Worthmann<br>
+								<strong>Distributed Optimization using ALADIN for Model Predictive Control in Smart Grids</strong> <br>
+								<i>IEEE Transactions on Control Systems Technology</i> (early access, 2021) 
+							</li>
+                						<li> T.K.S. Ritschel, F. Weiss, M. Baumann, S. Grundel <br> 
+								<strong>Nonlinear model reduction of dynamical power grid models using quadratization and balanced truncation</strong> <br>
+								<i>at - Automatisierungstechnik</i> <strong>68</strong>(12), 1022-1034 (2020, DOI: <a href="https://doi.org/10.1515/auto-2020-0070">10.1515/auto-2020-0070</a>) 
+							</li>
+							<li> T. Aschenbruck, W. Esterhuizen, S. Streif <br>
+								<strong>Transient stability analysis of power grids with admissible and maximal robust positively invariant sets</strong><br>
+								<i> Automatisierungstechnik</i>  (2020). In Press
+							</li>
+							<li> P. Sauerteig, K. Worthmann<br>
+								<strong>Towards multiobjective optimization and control of smart grids.</strong> <br>
+								<i>Optimal Control, Applications and Methods (OCAM), special issue "MPC for Energy Systems: Economic and Distributed Approaches"</i>, <strong>41</strong>:128-145 (2020) 
+							</li>
+							<li> W. Esterhuizen, T. Aschenbruck, S. Streif<br> 
+								<a href="https://arxiv.org/abs/1904.01985">On Maximal Robust Positively Invariant Sets in Constrained Nonlinear Systems,</a><br> 
+								<i>Automatica</i> 119, 109044 (2020)  
+							</li>
+						        <li> M. Baumann, S. Grundel, P. Sauerteig, K. Worthmann<br>
+						         	<strong>Surrogate models in bidirectional optimization of coupled microgrids.</strong> <br>
+								<i>at-Automatisierungstechnik</i>, <strong>67</strong>(12), 1035-1046 (2019)
+							</li>
+						</ul>
+					</div>
 
-<div id="conferences" class="tabcontent">
-							<ul>
-								<li> T. Aschenbruck, M. Baumann, W. Esterhuizen, B. Filipecki, S. Grundel, C. Helmberg, P. Sauerteig, S. Streif, T.K.S. Ritschel, K. Worthmann<br>  
-									<strong>Optimization and Stabilization of Hierarchical Electrical Networks</strong> <br>
-									In <i>S. G&ouml;ttlich, M. Herty, and A. Milde, editors, Mathematical Modeling, Simulation, and Optimization for Power Engineering and Management.</i> Springer (2021) 
-								</li>
-								<li> P. Sauerteig, M. Baumann, J. Dickert, S. Grundel, K. Worthmann<br>
-									<strong>Reducing transmission losses via reactive power control</strong> <br>
-									In <i>S. G&ouml;ttlich, M. Herty, and A. Milde, editors, Mathematical Modeling, Simulation, and Optimization for Power Engineering and Management</i>. Springer (2021) 
-								</li>
-								<li> P. Sauerteig, Y. Jiang, B. Houska, K. Worthmann <br>
-									<strong>Distributed Control Enforcing Group Sparsity in Smart Grids</strong> <br>
-									<i>IFAC-PapersOnLine</i>, 53(<strong>2</strong>), 13269-13274, 2020.
-								</li>
-								<li> S. Grundel, P. Sauerteig, K. Worthmann<br> 
-									<strong>Surrogate models for coupled microgrids</strong> <br>
-									In <i>I. Farag&oacute;, F. Izs&aacute;k, P.L. Simon, editors, Progress in Industrial Mathematics at ECMI 2018, volume 30 of Mathematics in Industry</i>, Springer, 477-483, 2019.
-								</li>
-								<li> P. Braun, P. Sauerteig, K. Worthmann<br>
-									<b>Distributed optimization based control on the example of microgrids</b><br>
-									In <i>M.J. Blondin, P.M. Pardalos, and J. Sa&eacute;z, editors, Computational Intelligence and Optimization Methods for Control Engineering, volume 150 of Springer Optmization and Its Applications</i>. Springer, 173-200, 2019.
-							</ul>
-</div>
+					<div id="conferences" class="tabcontent">
+						<ul>
+							<li> T. Aschenbruck, M. Baumann, W. Esterhuizen, B. Filipecki, S. Grundel, C. Helmberg, P. Sauerteig, S. Streif, T.K.S. Ritschel, K. Worthmann<br>  
+								<strong>Optimization and Stabilization of Hierarchical Electrical Networks</strong> <br>
+								In <i>S. G&ouml;ttlich, M. Herty, and A. Milde, editors, Mathematical Modeling, Simulation, and Optimization for Power Engineering and Management.</i> Springer (2021) 
+							</li>
+							<li> P. Sauerteig, M. Baumann, J. Dickert, S. Grundel, K. Worthmann<br>
+								<strong>Reducing transmission losses via reactive power control</strong> <br>
+								In <i>S. G&ouml;ttlich, M. Herty, and A. Milde, editors, Mathematical Modeling, Simulation, and Optimization for Power Engineering and Management</i>. Springer (2021) 
+							</li>
+							<li> P. Sauerteig, Y. Jiang, B. Houska, K. Worthmann <br>
+								<strong>Distributed Control Enforcing Group Sparsity in Smart Grids</strong> <br>
+								<i>IFAC-PapersOnLine</i>, 53(<strong>2</strong>), 13269-13274, 2020.
+							</li>
+							<li> S. Grundel, P. Sauerteig, K. Worthmann<br> 
+								<strong>Surrogate models for coupled microgrids</strong> <br>
+								In <i>I. Farag&oacute;, F. Izs&aacute;k, P.L. Simon, editors, Progress in Industrial Mathematics at ECMI 2018, volume 30 of Mathematics in Industry</i>, Springer, 477-483, 2019.
+							</li>
+							<li> P. Braun, P. Sauerteig, K. Worthmann<br>
+								<b>Distributed optimization based control on the example of microgrids</b><br>
+								In <i>M.J. Blondin, P.M. Pardalos, and J. Sa&eacute;z, editors, Computational Intelligence and Optimization Methods for Control Engineering, volume 150 of Springer Optmization and Its Applications</i>. Springer, 173-200, 2019.
+						</ul>
+					</div>
 
-<div id="posters" class="tabcontent">
-							<ul>
-							        <li> M. Baumann, S. Grundel, P. Sauerteig, K. Worthmann. <a href="data/group19.pdf">Surrogate Models for Coupled Microgrids</a><br>
-							        		Presented at <i>CSC Workshop on Identification, simulation and control of complex dynamical systems from Data</i>, May 08-11, 2019
-							        </li>
-								<li> M. Baumann, S. Grundel, P. Mlinari&#263;. <a href="data/fepset19.pdf">Complexity Reduction for Power Flow Simulations</a><br>
-									Presented at <i>Conference on Future Electric Power Systems and the Energy Transition</i>, February 4, 2019
-								</li>
-								<li> P. Sauerteig, K. Worthmann. <a href="data/poster_ODS_2018.pdf">Control of Residential Energy Systems using Energy Storages & Controllable Loads</a><br>
-									Presented at <i>Summer School on Optimization of Dynamical Systems</i>, Bremen, September 3, 2018
-								</li>
-							</ul>
-</div>
+					<div id="posters" class="tabcontent">
+						<ul>
+						        <li> M. Baumann, S. Grundel, P. Sauerteig, K. Worthmann. <a href="data/group19.pdf">Surrogate Models for Coupled Microgrids</a><br>
+						        		Presented at <i>CSC Workshop on Identification, simulation and control of complex dynamical systems from Data</i>, May 08-11, 2019
+						        </li>
+							<li> M. Baumann, S. Grundel, P. Mlinari&#263;. <a href="data/fepset19.pdf">Complexity Reduction for Power Flow Simulations</a><br>
+								Presented at <i>Conference on Future Electric Power Systems and the Energy Transition</i>, February 4, 2019
+							</li>
+							<li> P. Sauerteig, K. Worthmann. <a href="data/poster_ODS_2018.pdf">Control of Residential Energy Systems using Energy Storages & Controllable Loads</a><br>
+								Presented at <i>Summer School on Optimization of Dynamical Systems</i>, Bremen, September 3, 2018
+							</li>
+						</ul>
+					</div>
 
-<div id="presentations" class="tabcontent">
-							<ul>
-								<li> P. Sauerteig: <a href="data/ecmi2021_sauerteig.pdf">How to Coordinate Countermeasures against COVID-19</a><br> 
-									Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 14th April 2021 
-								</li>
-								<li> B. Filipecki: Semidefinite Programming Approach to Optimal Power Flow with FACTS Devices<br> 
-									Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 13th April 2021 
-								</li>
-								<li> P. Sauerteig: <a href="data/IFAC2020_sauerteig.pdf">Distributed Control Enforcing Group Sparsity in Smart Grids</a><br>
-									Presented at <i>21st IFAC World Congress Berlin (virtual)</i>, 12-17 July 2020
-								</li>
-                                                        		<li> P. Sauerteig: <a href="data/Sauerteig_at_ShanghaiTechJune19.pdf">Current Research Topics in Distributed Optimization of Smart Grids</a><br>
-                                                        			Presented at <i>ShanghaiTech SIST Seminar</i>, 10th June 2019
-								</li>
-								<li> M. Baumann: <a href="data/siamcse19.pdf">Model-order Reduction for Dynamic Power Flow Simulations</a><br>
-									Presented at <i>SIAM CSE 2019</i>, Spokane, WA, USA, 27th February 2019
-								</li>
-								<li> W. Esterhuizen: <a href="data/willem_mpi.pdf">Transient Stability Analysis of Power Grids with Admissible and Maximal Robust Positively Invariant Sets</a><br>
-									Presented at <i>MPI Magdeburg</i>, 12th February 2019
-								</li>
-								<li> M. Baumann: <a href="data/fraunhofer-02-07-18.pdf">Model-Order Reduction for Power Grid Simulations with Renewables and Batteries</a><br>
-									Presented at <i>Fraunhofer IEE</i>, Kassel, Germany, 2nd July 2018
-								</li>
-								<li> P. Sauerteig: <a href="data/ECMI2018.pdf">Control of Residential Energy Systems using Energy Storages and Controllable Loads</a><br>
-									Presented at <i>20th European Conference on Mathematics for Industry Budapest</i>, 22nd June 2018
-								</li>
-							</ul>
-</div>
+					<div id="presentations" class="tabcontent">
+						<ul>
+							<li> P. Sauerteig: <a href="data/ecmi2021_sauerteig.pdf">How to Coordinate Countermeasures against COVID-19</a><br> 
+								Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 14th April 2021 
+							</li>
+							<li> B. Filipecki: Semidefinite Programming Approach to Optimal Power Flow with FACTS Devices<br> 
+								Presented at <i>21st European Conference on Mathematics for Industry Wuppertal (virtual)</i>, 13th April 2021 
+							</li>
+							<li> P. Sauerteig: <a href="data/IFAC2020_sauerteig.pdf">Distributed Control Enforcing Group Sparsity in Smart Grids</a><br>
+								Presented at <i>21st IFAC World Congress Berlin (virtual)</i>, 12-17 July 2020
+							</li>
+                                                       	<li> P. Sauerteig: <a href="data/Sauerteig_at_ShanghaiTechJune19.pdf">Current Research Topics in Distributed Optimization of Smart Grids</a><br>
+                                                        		Presented at <i>ShanghaiTech SIST Seminar</i>, 10th June 2019
+							</li>
+							<li> M. Baumann: <a href="data/siamcse19.pdf">Model-order Reduction for Dynamic Power Flow Simulations</a><br>
+								Presented at <i>SIAM CSE 2019</i>, Spokane, WA, USA, 27th February 2019
+							</li>
+							<li> W. Esterhuizen: <a href="data/willem_mpi.pdf">Transient Stability Analysis of Power Grids with Admissible and Maximal Robust Positively Invariant Sets</a><br>
+								Presented at <i>MPI Magdeburg</i>, 12th February 2019
+							</li>
+							<li> M. Baumann: <a href="data/fraunhofer-02-07-18.pdf">Model-Order Reduction for Power Grid Simulations with Renewables and Batteries</a><br>
+								Presented at <i>Fraunhofer IEE</i>, Kassel, Germany, 2nd July 2018
+							</li>
+							<li> P. Sauerteig: <a href="data/ECMI2018.pdf">Control of Residential Energy Systems using Energy Storages and Controllable Loads</a><br>
+								Presented at <i>20th European Conference on Mathematics for Industry Budapest</i>, 22nd June 2018
+							</li>
+						</ul>
+					</div>
 
-<div id="theses" class="tabcontent">
-							<ul>
-								<li>Frances Weiss: <a href="data/masterthesis_fw_20190830.pdf">Simulation, Analysis, and Model-Order Reduction for Dynamic Power Network Models</a> (master thesis, 2019) <br>
-									Supervision: Sara Grundel and Manuel Baumann at MPI Magdeburg
-								</li>
-							</ul>
-</div>
+					<div id="theses" class="tabcontent">
+						<ul>
+							<li>Frances Weiss: <a href="data/masterthesis_fw_20190830.pdf">Simulation, Analysis, and Model-Order Reduction for Dynamic Power Network Models</a> (master thesis, 2019) <br>
+								Supervision: Sara Grundel and Manuel Baumann at MPI Magdeburg
+							</li>
+						</ul>
+					</div>
 
-<script>
-function openPub(evt, pubName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(pubName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+					<script>
+						function openPub(evt, pubName) {
+  							var i, tabcontent, tablinks;
+  							tabcontent = document.getElementsByClassName("tabcontent");
+  							for (i = 0; i < tabcontent.length; i++) {
+    								tabcontent[i].style.display = "none";
+  							}
+  							tablinks = document.getElementsByClassName("tablinks");
+  							for (i = 0; i < tablinks.length; i++) {
+    								tablinks[i].className = tablinks[i].className.replace(" active", "");
+  							}
+  							document.getElementById(pubName).style.display = "block";
+  							evt.currentTarget.className += " active";
+						}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+						// Get the element with id="defaultOpen" and click on it
+						document.getElementById("defaultOpen").click();
+					</script>
 
 					</td>
 				</tr>
