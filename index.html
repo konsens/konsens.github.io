@@ -27,7 +27,7 @@
 		.tab {
 		  overflow: hidden;
 		  border: none; /*1px solid #ccc;*/
-		  /*background-color: #f1f1f1;*/
+		  <!--background-color: #f1f1f1;*/-->
 		}
 		
 		/* Style the buttons inside the tab */
@@ -37,26 +37,26 @@
 		  border: none;
 		  outline: none;
 		  cursor: pointer;
-		  padding: 14px 16px;
+		  padding: 2px 5px;
 		  transition: 0.3s;
-		  font-size: 17px;
+		  font-size: 15px;
 		}
 		
 		/* Change background color of buttons on hover */
 		.tab button:hover {
-		  background-color: rgb(204, 204, 255); /*#ddd;*/
+		  background-color: rgb(204, 204, 255); <!--#ddd;*/-->
 		}
 		
 		/* Create an active/current tablink class */
 		.tab button.active {
-		  background-color: rgb(204, 204, 255); /*#ccc;*/
+		  background-color: rgb(204, 204, 255); <!--#ccc;*/-->
 		}
 		
 		/* Style the tab content */
 		.tabcontent {
 		  display: none;
 		  padding: 6px 12px;
-		  border: none; /*1px solid #ccc;*/
+		  border: none; <!--/*1px solid #ccc;*/-->
 		  border-top: none;
 		}
 	</style>
@@ -288,10 +288,12 @@
 			</tbody>
 		</table>
 		<br>
+		<!--
 		<hr>
 		<center>
 			<a name="projdes"><img src="konsens/wind-turbines.jpg" width="50%"></img></a>
 		</center>
+		--> 
 		<br>
 		<table border="0" cellpadding="3" cellspacing="1">
 			<tbody>
@@ -332,11 +334,11 @@
 						countermeasures are developed. All results are reported in scientific publications:
 						</p>
 <div class="tab">
-  <button class="tablinks" onclick="openPub(event, 'journals')" id="defaultOpen">Journal Publications</button>
-  <button class="tablinks" onclick="openPub(event, 'conferences')">Conference Proceedings & Book Chapters</button>
-  <button class="tablinks" onclick="openPub(event, 'posters')">Scientific Posters</button>
-  <button class="tablinks" onclick="openPub(event, 'presentations')">Presentations</button>
-  <button class="tablinks" onclick="openPub(event, 'theses')">Student Theses</button>
+  <button class="tablinks" onclick="openPub(event, 'journals')" id="defaultOpen"><b>Journal Publications</b></button>
+  <button class="tablinks" onclick="openPub(event, 'conferences')"><b>Conference Proceedings & Book Chapters</b></button>
+  <button class="tablinks" onclick="openPub(event, 'posters')"><b>Scientific Posters</b></button>
+  <button class="tablinks" onclick="openPub(event, 'presentations')"><b>Presentations</b></button>
+  <button class="tablinks" onclick="openPub(event, 'theses')"><b>Student Theses</b></button>
 </div>
 
 <div id="journals" class="tabcontent">
